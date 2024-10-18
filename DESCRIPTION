@@ -1,0 +1,11 @@
+Package: WPI
+Type: Package
+Title: Wasserstein Polarization Index
+Version: 0.1.0
+Author: Hane Lee
+Maintainer: Hane Lee <hane.leef@columbia.edu>
+Description: This package calculates the Wasserstein Polarization Index from Lee and Sobel (2024).
+License: mit
+Encoding: UTF-8
+LazyData: true
+Imports: dplyr, transport
