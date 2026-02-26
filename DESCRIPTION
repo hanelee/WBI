@@ -1,0 +1,17 @@
+Package: WBI
+Type: Package
+Title: Wasserstein Bipolarization Index
+Version: 0.1.0
+Authors@R: c(
+    person(
+      "Hane", "Lee",
+      email = "hl3333@columbia.edu",
+      role = c("aut", "cre")
+    )
+  )
+Description: Computation of the Wasserstein Bipolarization Index as described in Lee and Sobel (Forthcoming).
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: transport, dplyr, bcaboot
+RoxygenNote: 7.3.3
