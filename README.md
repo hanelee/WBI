@@ -1,6 +1,6 @@
 # WBI: Wasserstein Bipolarization Index
 
-This `WBI` R package computes the Wasserstein Bipolarization Index, as described in Lee and Sobel (forthcoming).
+This `WBI` R package computes the Wasserstein Bipolarization Index, as described in Lee and Sobel (forthcoming in Annals of Applied Statistics).
 
 ## Installation
 
