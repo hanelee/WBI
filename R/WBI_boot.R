@@ -14,6 +14,16 @@
 #' @return A vector of length three containing the CI lower bound, point estimate, and CI upper bound.
 #' @importFrom bcaboot bcajack
 #' @export
+#'
+#' @examples
+#' # We want to measure WBI of an opinion item measured on [0,100].
+#' # We choose W2 distance and 95% bootstrap confidence intervals.
+#' data <- c(20, 100, 50, 50, 0,
+#'           90, 85, 10, 25, 10,
+#'           30, 90, 80, 0, 100,
+#'           20, 30, 0, 65, 95)
+#' results <- WBI_boot(data, 2, 0, 100, 0.05)
+#'
 
 WBI_boot <- function(obs, wp, min, max, alpha, r=5000){
 

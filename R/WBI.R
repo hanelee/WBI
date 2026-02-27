@@ -10,12 +10,22 @@
 #' @param min The minimum of the response scale.
 #' @param max The maximum of the response scale.
 #' @param alpha Significance level of the confidence interval.
-#' @param wt Weights of each observation, with default set to uniform.
+#' @param wt Weight of each observation, with default set to uniform.
 #' @return A vector of length three containing the CI lower bound, point estimate, and CI upper bound.
 #' @importFrom dplyr group_by summarize %>%
 #' @importFrom transport transport
 #' @importFrom stats qnorm
 #' @export
+#'
+#' @examples
+#' # We want to measure WBI of an opinion item measured on [0,100].
+#' # We choose W2 distance and 95% asymptotic confidence intervals.
+#' data <- c(20, 100, 50, 50, 0,
+#'           90, 85, 10, 25, 10,
+#'           30, 90, 80, 0, 100,
+#'           20, 30, 0, 65, 95)
+#' results <- WBI(data, 2, 0, 100, 0.05)
+#'
 
 WBI <- function(obs, wp, min, max, alpha, wt=rep(c(1/length(obs)), length(obs))){
 

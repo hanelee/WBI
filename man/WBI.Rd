@@ -17,7 +17,7 @@ WBI(obs, wp, min, max, alpha, wt = rep(c(1/length(obs)), length(obs)))
 
 \item{alpha}{Significance level of the confidence interval.}
 
-\item{wt}{Weights of each observation, with default set to uniform.}
+\item{wt}{Weight of each observation, with default set to uniform.}
 }
 \value{
 A vector of length three containing the CI lower bound, point estimate, and CI upper bound.
@@ -27,4 +27,14 @@ This function takes a vector of observed responses and computes the Wasserstein
 Bipolarization Index and its asymptotic confidence interval with the maximum
 polarization distribution (with 0.5 masses each on min and max) as the maximally
 separated measure.
+}
+\examples{
+# We want to measure WBI of an opinion item measured on [0,100].
+# We choose W2 distance and 95\% asymptotic confidence intervals.
+data <- c(20, 100, 50, 50, 0,
+          90, 85, 10, 25, 10,
+          30, 90, 80, 0, 100,
+          20, 30, 0, 65, 95)
+results <- WBI(data, 2, 0, 100, 0.05)
+
 }

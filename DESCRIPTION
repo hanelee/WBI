@@ -9,9 +9,12 @@ Authors@R: c(
       role = c("aut", "cre")
     )
   )
-Description: Computation of the Wasserstein Bipolarization Index as described in Lee and Sobel (Forthcoming).
+Description: Computation of the Wasserstein Bipolarization Index as described in Lee and Sobel (Forthcoming). Provides both asymptotic and bootstrap methods for calculating confidence intervals (see paper Appendix for further details).
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Imports: transport, dplyr, bcaboot
 RoxygenNote: 7.3.3
+Suggests: 
+    spelling
+Language: en-US
