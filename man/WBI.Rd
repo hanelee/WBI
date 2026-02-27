@@ -29,6 +29,7 @@ polarization distribution (with 0.5 masses each on min and max) as the maximally
 separated measure.
 }
 \examples{
+\donttest{
 # We want to measure WBI of an opinion item measured on [0,100].
 # We choose W2 distance and 95\% asymptotic confidence intervals.
 data <- c(20, 100, 50, 50, 0,
@@ -36,5 +37,5 @@ data <- c(20, 100, 50, 50, 0,
           30, 90, 80, 0, 100,
           20, 30, 0, 65, 95)
 results <- WBI(data, 2, 0, 100, 0.05)
-
+}
 }
