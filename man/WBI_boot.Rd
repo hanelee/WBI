@@ -29,13 +29,13 @@ polarization distribution (with 0.5 masses each on min and max) as the maximally
 separated measure. We use the package bcaboot for bootstrap.
 }
 \examples{
-\donttest{
 # We want to measure WBI of an opinion item measured on [0,100].
 # We choose W2 distance and 95\% bootstrap confidence intervals.
+# r=1 for automatic testing (runs quickly)
 data <- c(20, 100, 50, 50, 0,
           90, 85, 10, 25, 10,
           30, 90, 80, 0, 100,
           20, 30, 0, 65, 95)
-results <- WBI_boot(data, 2, 0, 100, 0.05)
-}
+results <- WBI_boot(data, 2, 0, 100, 0.05, r=1)
+
 }
